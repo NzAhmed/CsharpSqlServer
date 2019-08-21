@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Data.SqlClient;
 /*
-	dotnet new console -o DotNetSqlClient
-    cd DotNetSqlClient
-    DotNetSqlClient>dotnet add package System.Data.SqlClient 
+	dotnet new console -o DotNetConsoleApp
+    cd DotNetConsoleApp
+    DotNetConsoleApp>dotnet add package System.Data.SqlClient 
     --------
     Create "Shopping" Sql Server Database 
     Create Products Table:
     CREATE TABLE Products(id int primary key Identity, name varchar(50));
 */
-namespace DotNetSqlClient
+namespace DotNetConsoleApp
 {
     class Program
     {
