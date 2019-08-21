@@ -1,7 +1,7 @@
-﻿using System;
+using System;
 using System.Data.SqlClient;
 /*
-	dotnet new console -o DotNetConsoleApp
+    dotnet new console -o DotNetConsoleApp
     cd DotNetConsoleApp
     DotNetConsoleApp>dotnet add package System.Data.SqlClient 
     --------
@@ -29,8 +29,7 @@ namespace DotNetConsoleApp
             SqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
             {
-                Console.WriteLine(String.Format("{0}, {1}",
-                reader[0], reader[1]));
+                Console.WriteLine(String.Format("{0}, {1}", reader[0], reader[1]));
             }
             reader.Close();
             conn.Close();
